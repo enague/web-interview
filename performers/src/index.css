@@ -2,4 +2,19 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: lightgray;
 }
+#App {
+  padding: 50px;
+}
+
+.performer_list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#dropdownMenuButton {
+  float: right;
+}
+
