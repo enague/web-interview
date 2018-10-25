@@ -14,11 +14,18 @@ class PerformerList extends Component {
   const performers = this.props.performers;
   return (
     <div>
-        <h1>List of Performers</h1>
+        <h1 style={{ padding: '30px' }}>
+            List of Performers
+        </h1>
         <div className='performer_list'>
             {performers.map((performer,i) => (
             <div>
-                <Performer id={performer.id} name={performer.name} url={performer.hero_image_url} category={performer.category_group} key={i}/>
+                <Performer id={performer.id} 
+                           name={performer.name} 
+                           url={performer.hero_image_url} 
+                           category={performer.category_group} 
+                           key={i}
+                />
             </div>
             ))}
         </div>
